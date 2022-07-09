@@ -62,6 +62,16 @@ h1 {
     height: 60px;
 }
 
+.btn:hover {
+    box-shadow:0 0 10px 0 #f33925;
+    font-size: 275%;
+}
+
+#opp:hover {
+    box-shadow:0 0 10px 0 #f7be40;
+    font-size: 275%;
+}
+
 #opp {
     background-color: #f33925;
 }
