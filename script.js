@@ -1,7 +1,7 @@
 var fval = 0
 
 function inp(val) {
-    if (fval === 1 && val === "+" && val === "-" && val === "*" && val === "/") {
+    if (fval === 1 && val !== "+" && val !== "-" && val !== "*" && val !== "/") {
         fval = 0
         document.getElementById("val").value = ""
         document.getElementById("val").value+=val
@@ -29,5 +29,4 @@ function equate() {
     var calc = document.getElementById("val").value
     document.getElementById("val").value = eval(calc)
     fval = 1
-    console.log(fval)
 }
