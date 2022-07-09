@@ -1,23 +1,32 @@
 var fval = 0
 
-function inp(val) {
-    if (fval === 1 && val !== "+" && val !== "-" && val !== "*" && val !== "/") {
-        fval = 0
-        document.getElementById("val").value = ""
-        document.getElementById("val").value+=val
-    }
+function inp(input) {
+    var calc = document.getElementById("val").value;
+    var last = calc.split('').pop();
+    if (calc.length === 0 && input ==="/") {}
+    else if ((input === "+" || input === "-" || input === "*" || input === "/") && (last === "+" || last === "-" || last === "*" || last === "/")){}
     else {
-        fval=0
-        document.getElementById("val").value+=val
+        if (fval === 1 && input !== "+" && input !== "-" && input !== "*" && input !== "/") {
+            fval = 0
+            document.getElementById("val").value = ""
+            document.getElementById("val").value+=input
+        }
+        else {
+            fval=0
+            document.getElementById("val").value+=input
+        }
     }
-    
 }
 
 function zero() {
     var calc = document.getElementById("val").value
-    if (calc.length === 1 && calc === "0"){}
+    var last = calc.split('').pop();
+    if (last === "+" || last === "-" || last === "*" || last === "/"){}
     else {
-        document.getElementById("val").value = calc+0
+        if (calc.length === 1 && calc === "0"){}
+        else {
+            document.getElementById("val").value = calc+0
+        }
     }
 }
 
