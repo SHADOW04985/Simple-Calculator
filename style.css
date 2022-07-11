@@ -61,14 +61,41 @@ h1 {
     height: 60px;
 }
 
+#del {
+    font-size: 22px;
+    background-color: #f33925;
+}
+
+#brc1 {
+    background-color: #f33925;
+}
+#brc1:hover {
+    box-shadow:0 0 10px 0 #f7be40;
+    font-size: 225%;
+}
+
+#brc2 {
+    background-color: #f33925;
+}
+
+#brc2:hover {
+    box-shadow:0 0 10px 0 #f7be40;
+    font-size: 225%;
+}
+
+#del:hover {
+    box-shadow:0 0 10px 0 #f7be40;
+    font-size: 150%;
+}
+
 .btn:hover {
     box-shadow:0 0 10px 0 #f33925;
-    font-size: 275%;
+    font-size: 245%;
 }
 
 #opp:hover {
     box-shadow:0 0 10px 0 #f7be40;
-    font-size: 275%;
+    font-size: 245%;
 }
 
 #opp {
