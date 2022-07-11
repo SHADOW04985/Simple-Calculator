@@ -1,2 +1,3 @@
 # Simple-Calculator
-![image](https://user-images.githubusercontent.com/22547443/178096161-cd83f40a-9121-4241-9f58-7fc33fd3966d.png)
+![image](https://user-images.githubusercontent.com/22547443/178267814-30d6ba98-d007-49a0-abca-39809231955c.png)
+
